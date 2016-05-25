@@ -5,32 +5,95 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>QandU - The question-and-answer website for QU students</title>
+    <title>Jimmy's Pizza Restaurant</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-  <link href="{% static "css/base.css" %}" rel="stylesheet">
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-              <a href="/" class="navbar-brand">Pizza</a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">Home</a></li>
-                </ul>
+    <div id="wrapper" class="container">
+        <div id="header" class="page-header">
+            <div class="row">
+                <div id="address" class="col-md-4">
+                    <h4>712 Walt Whitman Road</h4>
+                    <h4>Melville, NY 11747</h4>
+                </div>
+                <div class="col-md-4">
+                    <a href="/"><img width="391" height="196" src="http://victorspizzaandpasta.com/wp-content/uploads/2015/03/logo-011-e1425349505885.png"></a>
+                </div>
+                <div id="phone" class="col-md-4">
+                    <p>
+                        <a href="https://www.youtube.com/channel/UCHdgI7YSrBCs9HpsXgB9oCA"><img src="http://victorspizzaandpasta.com/wp-content/themes/bottega/images/youtube.png" alt="" /></a>	
+                        <a href="https://www.facebook.com/victorsmelville"><img src="http://victorspizzaandpasta.com/wp-content/themes/bottega/images/facebook.png" alt="" /></a>	
+						<a href="https://www.twitter.com/victorsmelville"><img src="http://victorspizzaandpasta.com/wp-content/themes/bottega/images/twitter.png" alt="" /></a>	
+					    <a href="https://plus.google.com/u/0/b/115488001982566402524/115488001982566402524/about"><img src="http://victorspizzaandpasta.com/wp-content/themes/bottega/images/googleplus.png" alt="" /></a>	
+						<a href="http://www.yelp.com/biz/victors-pizza-and-pasta-house-melville"><img src="http://victorspizzaandpasta.com/wp-content/themes/bottega/images/yelp.png" alt="" /></a>	
+					</p>
+                    <h4>Phone: (631) 351-1270</h4>
+                </div>
             </div>
         </div>
-    </nav>
+        <nav id="navbar" class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="brand" class="navbar-brand" href="#">Home</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Take Out Menu<span class="caret"></span></a>
+                            <ul id="cater" class="dropdown-menu">
+                                <li><a href="/player_registration/">Victor's Pizzas<span class="sr-only"></span></a></li>
+                                <li><a href="/volunteer_registration/">Appetizers & Sides</a></li>
+                                <li><a href="/volunteer_registration/">Soups & Salads</a></li>
+                                <li><a href="/volunteer_registration/">Heros & Sandwhiches</a></li>
+                                <li><a href="/volunteer_registration/">Pastas</a></li>
+                                <li><a href="/volunteer_registration/">Entrees</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Catering Menu<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/player_registration/">Appetizer Trays<span class="sr-only"></span></a></li>
+                                <li><a href="/volunteer_registration/">Salad Trays</a></li>
+                                <li><a href="/volunteer_registration/">Entree Trays</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Specials<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/player_registration/">Lunch Specials<span class="sr-only"></span></a></li>
+                                <li><a href="/volunteer_registration/">Chicken Specials</a></li>
+                                <li><a href="/volunteer_registration/">Pasta Specials</a></li>
+                                <li><a href="/volunteer_registration/">Parmigiana Specials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/roster/">Coupons</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/user/logout/">Contact Info</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
     <div class="container">
         {% block content %}
         {% endblock %}
-    </div>    
+    </div>
+    <div class="container">
+        <div id="hours">
+            <p>Monday to Friday: 10 am to 10pm | Saturday & Sunday: 11am to 10 pm</p>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
