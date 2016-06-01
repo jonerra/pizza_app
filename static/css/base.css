@@ -35,14 +35,19 @@ body {
     font-family: 'Crimson Text',serif!important;
     font-size: 18px;
     margin: 0 auto 0;
+    background-color: #710e16;
 }
 
 #navbar ul a {
-    /* color: white; */
+    color: white;
+}
+
+#navbar ul a ul {
+  color: black;
 }
 
 #brand {
-    /* color: white; */
+    color: white;
 }
 
 #hours {
@@ -67,6 +72,14 @@ body {
   text-align: center;
 }
 
-#cater {
+#food li a {
+    color: black;
+}
+
+#tray li a {
+    color: black;
+}
+
+#special li a {
     color: black;
 }
